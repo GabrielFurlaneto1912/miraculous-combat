@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miraculous Kombat</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- MENU PRINCIPAL -->
+  <div id="main-menu">
+    <div class="background-glow"></div>
+    <div id="particles"></div>
+
+    <header class="top-bar">
+      <div class="brand">G PRODUÇÕES</div>
+      <div class="version">VERSÃO 0.1</div>
+    </header>
+
+    <main class="menu-layout">
+      <section class="menu-content">
+        <p class="subtitle">O DESTINO DOS MIRACULOUS ESTÁ EM SUAS MÃOS</p>
+
+        <h1 class="game-title">
+          MIRACULOUS
+          <span>KOMBAT</span>
+        </h1>
+
+        <div class="title-line"></div>
+
+        <p class="description">
+          Escolha seu portador.<br>
+          Prepare-se para lutar.
+        </p>
+
+        <nav class="menu-buttons">
+          <button id="play-button" class="menu-button primary">
+            <span>▶</span> JOGAR
+          </button>
+
+          <button id="options-button" class="menu-button">
+            OPÇÕES
+          </button>
+
+          <button id="credits-button" class="menu-button">
+            CRÉDITOS
+          </button>
+        </nav>
+      </section>
+
+      <section class="character-display">
+        <div class="character-aura"></div>
+        <div class="character-placeholder">
+          <span>PURPLEFLY</span>
+          <small>PORTADOR DO MIRACULOUS DA BORBOLETA</small>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bottom-bar">
+      <span>G PRODUÇÕES © 2026</span>
+      <span>MIRACULOUS KOMBAT</span>
+    </footer>
+  </div>
+
+  <!-- CONTAINER DO JOGO 3D -->
+  <div id="game-container"></div>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <button id="close-modal" class="close-button">✕</button>
+      <h2 id="modal-title">OPÇÕES</h2>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
