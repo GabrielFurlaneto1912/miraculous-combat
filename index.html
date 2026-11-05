@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="pt-BR">
 <head>
@@ -19,8 +20,12 @@
     </header>
 
     <main class="menu-layout">
+
       <section class="menu-content">
-        <p class="subtitle">O DESTINO DOS MIRACULOUS ESTÁ EM SUAS MÃOS</p>
+
+        <p class="subtitle">
+          O DESTINO DOS MIRACULOUS ESTÁ EM SUAS MÃOS
+        </p>
 
         <h1 class="game-title">
           MIRACULOUS
@@ -34,9 +39,19 @@
           Prepare-se para lutar.
         </p>
 
+        <!-- BOTÕES DO MENU -->
         <nav class="menu-buttons">
-          <button id="play-button" class="menu-button primary">
-            <span>▶</span> JOGAR
+
+          <button id="play-ai-button" class="menu-button primary">
+            <span>►</span> 1 JOGADOR (VS IA)
+          </button>
+
+          <button id="play-pvp-button" class="menu-button">
+            <span>►</span> 2 JOGADORES
+          </button>
+
+          <button id="instructions-button" class="menu-button">
+            COMO JOGAR
           </button>
 
           <button id="options-button" class="menu-button">
@@ -46,22 +61,30 @@
           <button id="credits-button" class="menu-button">
             CRÉDITOS
           </button>
+
         </nav>
+
       </section>
 
+      <!-- PERSONAGEM DO MENU -->
       <section class="character-display">
         <div class="character-aura"></div>
+
         <div class="character-placeholder">
           <span>PURPLEFLY</span>
-          <small>PORTADOR DO MIRACULOUS DA BORBOLETA</small>
+          <small>
+            PORTADOR DO MIRACULOUS DA BORBOLETA
+          </small>
         </div>
       </section>
+
     </main>
 
     <footer class="bottom-bar">
       <span>G PRODUÇÕES © 2026</span>
       <span>MIRACULOUS KOMBAT</span>
     </footer>
+
   </div>
 
   <!-- CONTAINER DO JOGO 3D -->
@@ -69,13 +92,23 @@
 
   <!-- MODAL -->
   <div id="modal" class="modal hidden">
+
     <div class="modal-content">
-      <button id="close-modal" class="close-button">✕</button>
+
+      <button id="close-modal" class="close-button">
+        ✕
+      </button>
+
       <h2 id="modal-title">OPÇÕES</h2>
+
       <div id="modal-body"></div>
+
     </div>
+
   </div>
 
+  <!-- SCRIPT PRINCIPAL -->
   <script type="module" src="/src/main.js"></script>
+
 </body>
 </html>
